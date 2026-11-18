@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Princess Day, Vaishnavi 👑</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating Background Hearts -->
+    <div class="bg-hearts" id="bg-hearts"></div>
+
+    <!-- Intro Screen -->
+    <div class="intro-screen" id="intro-screen">
+        <div class="crown-icon">👑</div>
+        <h2>For My Princess, Vaishnavi</h2>
+        <p>A little surprise waiting for my Chimneyyy...</p>
+        <button id="open-btn" onclick="startSurprise()">Tap to Open ✨</button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container hidden" id="main-content">
+        <header class="hero">
+            <span class="badge">✨ 18th November • Princess Day ✨</span>
+            <h1 class="title">Happy Princess Day,<br><span>Vaishnavi</span> 👑</h1>
+        </header>
+
+        <!-- Main Royal Photo (Pic 1 - Saree & Lights) -->
+        <section class="photo-section">
+            <div class="photo-frame main-frame">
+                <div class="crown-badge">👑</div>
+                <img src="pic1.jpg" alt="My Royal Princess">
+                <p class="caption">Nothing less than a Real Queen ✨</p>
+            </div>
+        </section>
+
+        <!-- Live Relationship Timer -->
+        <section class="timer-box">
+            <p class="timer-title">Loving You Since 4 Years & Counting... ⏳❤️</p>
+            <div class="timer-grid">
+                <div><span id="days">1460</span><small>Days</small></div>
+                <div><span id="hours">00</span><small>Hours</small></div>
+                <div><span id="mins">00</span><small>Mins</small></div>
+                <div><span id="secs">00</span><small>Secs</small></div>
+            </div>
+        </section>
+
+        <!-- Typewriter Love Note (Tera Apna Message) -->
+        <section class="message-box">
+            <p id="typewriter-text"></p>
+        </section>
+
+        <!-- Special World Effect Promise Banner -->
+        <section class="world-box">
+            <div class="globe-wrapper">
+                <span class="globe-spin">🌍</span>
+                <span class="orbit-heart">❤️</span>
+            </div>
+            <h2 class="world-title">I Love You ❤️</h2>
+            <p class="world-text">"Fkt ek chance, ani sagli duniya tuzi..." ✨👑</p>
+        </section>
+
+        <!-- 4 Marathi Promises Checklist -->
+        <section class="promises-box">
+            <h3>My Promises To You, Bala 🤝❤️</h3>
+            <p class="sub-hint">(Tap each promise to lock it)</p>
+            <div class="promise-list">
+                <div class="promise-item" onclick="this.classList.toggle('checked')">
+                    <span class="check-circle">🤍</span>
+                    <span>15 Dec paryant ani tyachya nantar hi, me fkt tujha vishwas jinknya sathi majhe 100% efforts deynar.</span>
+                </div>
+                <div class="promise-item" onclick="this.classList.toggle('checked')">
+                    <span class="check-circle">🤍</span>
+                    <span>Aata kadhi hi tujhyapasun kahi lapavnar nahi ani khota bolnar nahi — sagla ekdum transparent thevnar.</span>
+                </div>
+                <div class="promise-item" onclick="this.classList.toggle('checked')">
+                    <span class="check-circle">🤍</span>
+                    <span>Tujhya dolyat kadhi hi pani yeu denar nahi, ani tujhya manala tras hoil asa kadhi vagnaar nahi.</span>
+                </div>
+                <div class="promise-item" onclick="this.classList.toggle('checked')">
+                    <span class="check-circle">🤍</span>
+                    <span>Tu ragaavli asli tari me kadhi har mannar nahi — karan tujhya shivay majhi duniya adhuri ahe, Bala.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2 More Photos Gallery (Pic 2 & Pic 3) -->
+        <section class="gallery-section">
+            <h3>My Favorite Moments With You 📸❤️</h3>
+            <div class="gallery-grid">
+                <div class="photo-frame tilt-left">
+                    <img src="pic2.jpg" alt="Cutest Pout">
+                    <p class="caption">My Cutest Chaos 🥺💖</p>
+                </div>
+                <div class="photo-frame tilt-right">
+                    <img src="pic3.jpg" alt="Our Memories">
+                    <p class="caption">365+ Days & Forever, Chimneyyy 🐥🌍</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Flip Cards -->
+        <section class="cards-section">
+            <h3>Tap each card to read 💌</h3>
+            <div class="cards-grid">
+                <div class="card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">✨ Tap Me #1</div>
+                        <div class="card-back">you're my everything, my forever waala person, myy bacchaa. ❤️</div>
+                    </div>
+                </div>
+                <div class="card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">🎶 Tap Me #2</div>
+                        <div class="card-back">"Teri doori na sahu, dur khud se rahun... Tu thodi der aur theher ja soneya ❤️"</div>
+                    </div>
+                </div>
+                <div class="card" onclick="this.classList.toggle('flipped')">
+                    <div class="card-inner">
+                        <div class="card-front">👑 Tap Me #3</div>
+                        <div class="card-back">4 saal ho gaye, lekin ab tera sath mile toh duniya badal toh nhi sakta lekin tuze sari khushi lauta sakta hun, ani tula je pn nafrat ahe tyakade bghnar sudha nhi, tuzya dolyat panee yenar nhi hi mazi jabadari, idk ata tu parat yeshil ki nhi pn mi tr fkt tuzach ahe!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secret Envelope Button -->
+        <section class="secret-section">
+            <button class="secret-btn" onclick="openLetter()">💌 Tap for a Secret Note</button>
+        </section>
+
+        <!-- Secret Letter Popup Modal -->
+        <div class="letter-modal hidden" id="letter-modal">
+            <div class="letter-content">
+                <span class="close-letter" onclick="closeLetter()">✖</span>
+                <h3>To My Dearest Bala 👑</h3>
+                <p>
+                    "Tu ragaavli ahes, block kelas, sagla manya ahe... pan majha prem kadhi kami honar nahi. 
+                    Me majhya side ne 100% efforts ghenar ahe, karan tu majhi duniya ahes, Chimneyyy. 
+                    Happy Princess Day once again! ❤️"
+                </p>
+                <button class="forgive-btn" onclick="forgiveEffect()">I Saw Your Efforts 💖</button>
+            </div>
+        </div>
+
+        <!-- Final Celebration Button -->
+        <footer class="footer">
+            <button class="celebrate-btn" onclick="triggerConfetti()">Claim Your Royal Crown 👑✨</button>
+            <p class="signature">Made with all my love, by Prajwal ❤️</p>
+        </footer>
+    </main>
+
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        const message = "Happy Princess Day, Meri Jaan (Chimneyyy)! 👑🐥 ik tu ata fugun ahes bt im really once again sorry, mala kharach kharach kharach gamvaych nhiye, and see im doing my best, kadhich konasathi badlaych tharvla navta bt now i m changing everything, mala duniya madhla best banaychay fkt tuzyasathi tu je prem deserve karte tech deychay ratri jari tu mla block karun end karun geliyes tri its ok mi tula promise kelta ki 15dec prnt tuzyasathi te sgl karen je karaycha ahe hya adhi vaglo khot chukich pn ata mla badlaychay sgl tu jari ata end karun geliy tri 15dec prnt mi mazyaside ne sgl karel tu bghayala naslis n tri sudha, i loveee youu so mucchh ❤️";
+        
+        function startSurprise() {
+            document.getElementById('intro-screen').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('intro-screen').classList.add('hidden');
+                document.getElementById('main-content').classList.remove('hidden');
+                typeWriter();
+                triggerConfetti();
+            }, 600);
+        }
+
+        let i = 0;
+        function typeWriter() {
+            if (i < message.length) {
+                document.getElementById("typewriter-text").innerHTML += message.charAt(i);
+                i++;
+                setTimeout(typeWriter, 38);
+            }
+        }
+
+        function triggerConfetti() {
+            confetti({
+                particleCount: 130,
+                spread: 85,
+                origin: { y: 0.6 },
+                colors: ['#ff4d6d', '#ffb3c1', '#ffd700', '#ffffff']
+            });
+        }
+
+        // Floating Background Hearts
+        const heartsContainer = document.getElementById('bg-hearts');
+        for (let j = 0; j < 18; j++) {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            heart.style.fontSize = (Math.random() * 15 + 12) + 'px';
+            heartsContainer.appendChild(heart);
+        }
+
+        // Live Timer
+        function updateTimer() {
+            const now = new Date();
+            document.getElementById('hours').innerText = String(now.getHours()).padStart(2, '0');
+            document.getElementById('mins').innerText = String(now.getMinutes()).padStart(2, '0');
+            document.getElementById('secs').innerText = String(now.getSeconds()).padStart(2, '0');
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+
+        // Secret Letter Functions
+        function openLetter() {
+            document.getElementById('letter-modal').classList.remove('hidden');
+        }
+        function closeLetter() {
+            document.getElementById('letter-modal').classList.add('hidden');
+        }
+        function forgiveEffect() {
+            closeLetter();
+            triggerConfetti();
+            alert("Thank you for seeing my efforts, Meri Princess! ❤️👑");
+        }
+
+        // Magic Finger Tap Sparkles
+        document.addEventListener('click', function(e) {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'tap-sparkle';
+            const emojis = ['❤️', '✨', '👑', '🌍', '💖'];
+            sparkle.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            sparkle.style.left = e.pageX + 'px';
+            sparkle.style.top = e.pageY + 'px';
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 1000);
+        });
+    </script>
+</body>
+</html>
